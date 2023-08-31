@@ -13,6 +13,7 @@
     --fz__28 : 1.75rem;
     --fz__20 : 1.25rem;
     --fz__32: 2rem;
+    --transition:color 250ms ease-in-out;
 }
 /* ---------------- General ------------------- */
 html{
@@ -61,35 +62,89 @@ ul{
 }
 
 .navigation ul li{
-  border-bottom: 2px solid var(--Eucaplyptus);
+  border-bottom: 3px solid var(--Eucaplyptus);
   padding-bottom: 3px;
+}
+.navigation ul li a {
+    transition: var(--transition) ;
+}
+.navigation ul li a:hover {
+    color:var(--Eucaplyptus);
+    border: none;
+
 }
 
  
 .logo__nav{
     margin: 37px 18px;
+   width: 95.762px;
+   height: 24.608px;
 }
 
 /* ------------- hero ---------------------- */
 .hero__container{
     background-color: var(--dark__purple);
     color: var(--White);
-    border-bottom-left-radius: 25% 25%;
-    border-bottom-right-radius: 25% 25%;
+    border-bottom-left-radius: 25% 5%;
+    border-bottom-right-radius: 25% 5%;
     height: 490px;
 
 }
 
-.hero__button{
+.hero__container h1{
+    font-family: var(--ff__Fraunces);
+    font-size: var(--fz__50);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 70px;
 
+}
+
+.hero__container h1 span{
+    background-image: linear-gradient(
+        to right,
+        var(--Eucaplyptus) 75%,
+        var(--Eucaplyptus) 75%
+      );
+      background-position: 0 1.02em;
+      background-repeat: repeat-x;
+      background-size: 8px 4px; 
+}
+
+.hero__container .hero__button{
+    transition: var(--transition) ;
+    background-color: var(--Eucaplyptus);
+    text-decoration: none;
+    color: var(--dark__purple);
+    font-weight: 700;
+    padding: 0.3em 1em;
+    transform: var(--transition);
+    letter-spacing: -0.16px;
+    padding: 12px 24px;
+
+}
+
+.hero__container  a:hover{
+    color: var(--Eucaplyptus);
+    background: none;
+    border: 2px solid var(--Eucaplyptus) ;
+}
+
+.link__button{
+    display: flex;
+    justify-content: center;
 }
 
 /* -----------------  main contains ---------------- */
 .main__container{
+    margin-top: 140px;
 
 }
 
 .img__phone{
+    width: 298.305px;
+    height: 178.159px;
+    margin: 50px;
 
 }
 
