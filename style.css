@@ -1,0 +1,104 @@
+:root{
+    --dark__purple:rgba(36, 5, 62, 1);
+    --Eucaplyptus:rgba(68, 255, 161, 1); 
+    --White:rgba(255, 255, 255, 1);
+    --Davy__grey: rgba(88, 77, 98, 1); 
+    
+    /* --------- font-------- */
+    --ff__Fraunces: 'Fraunces', serif;
+    --ff__Manrope: 'Manrope', sans-serif;
+    --fz__60: 3.75rem;
+    --fz__50 : 3.125rem;
+    --fz__48: 3rem;
+    --fz__28 : 1.75rem;
+    --fz__20 : 1.25rem;
+    --fz__32: 2rem;
+}
+/* ---------------- General ------------------- */
+html{
+    box-sizing: border-box;
+    font-size:100%;
+}
+
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: var(--ff__Manrope) ;
+    line-height: 1.56;
+    padding-bottom: 30rem;
+}
+
+h1,p,ul{
+    margin-top: 0;
+}
+
+h1{
+    line-height: 1;
+}
+
+ul{
+    list-style-type: none;
+    margin: 32px 18px;
+    padding: 0;
+}
+
+
+
+/* --------------navigation bar ------------ */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation ul li a{
+    color: var(--White);
+    text-decoration: none;
+    line-height: 1.625;
+}
+
+.navigation ul li{
+  border-bottom: 2px solid var(--Eucaplyptus);
+  padding-bottom: 3px;
+}
+
+ 
+.logo__nav{
+    margin: 37px 18px;
+}
+
+/* ------------- hero ---------------------- */
+.hero__container{
+    background-color: var(--dark__purple);
+    color: var(--White);
+    border-bottom-left-radius: 25% 25%;
+    border-bottom-right-radius: 25% 25%;
+    height: 490px;
+
+}
+
+.hero__button{
+
+}
+
+/* -----------------  main contains ---------------- */
+.main__container{
+
+}
+
+.img__phone{
+
+}
+
+/* --- Section ------ */
+.resume{
+
+}
+
+.sub__resume{
+
+}
+
